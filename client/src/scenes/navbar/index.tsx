@@ -4,10 +4,7 @@ import PixIcon from "@mui/icons-material/Pix";
 import { Box, Typography, useTheme } from '@mui/material';
 import FlexBetween from '@/components/FlexBetween';
 
-// eslint-disable-next-line
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
     const { palette } = useTheme();
     const [selected, setSelected] = useState("dashboard");
 
@@ -49,7 +46,7 @@ const Navbar = (props: Props) => {
                 </Box>
             </FlexBetween>
         </FlexBetween>
-  )
+    )
 }
 
 export default Navbar
