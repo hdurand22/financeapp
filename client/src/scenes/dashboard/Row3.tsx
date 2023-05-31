@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import DashboardBox from '@/components/DashboardBox'
 import { useGetKpisQuery, useGetProductsQuery, useGetTransactionsQuery } from '@/state/api'
 import { Box, Typography, useTheme } from '@mui/material'
@@ -7,10 +7,7 @@ import BoxHeader from '@/components/BoxHeader'
 import FlexBetween from '@/components/FlexBetween'
 import { Cell, Pie, PieChart } from 'recharts'
 
-// eslint-disable-next-line
-type Props = {}
-
-const Row3 = (props: Props) => {
+const Row3 = () => {
 
   const { palette } = useTheme();
   const pieColors = [palette.primary[800], palette.primary[500]];
